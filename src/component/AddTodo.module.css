@@ -4,7 +4,7 @@
     border-color: black !important;
 }
 .input_field_container{
-    width: 50%;
+    width: 50% !important;
 }
 
 #inputID::placeholder {
@@ -20,21 +20,21 @@
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     .input_field_container{
-        width: 50%;
+        width: 50% !important;
     }
  }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
     .input_field_container{
-        width: 75%;
+        width: 75% !important;
     }
  }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) { 
     .input_field_container{
-        width: 100%;
+        width: 100% !important;
     }
  }
 
