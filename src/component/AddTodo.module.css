@@ -3,6 +3,9 @@
     color: white !important;
     border-color: black !important;
 }
+.input_field_container{
+    width: 50%;
+}
 
 #inputID::placeholder {
     color: #93a4cb;
@@ -13,4 +16,26 @@
     outline: none;
     box-shadow:none !important;
 }  
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .input_field_container{
+        width: 50%;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .input_field_container{
+        width: 75%;
+    }
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    .input_field_container{
+        width: 100%;
+    }
+ }
+
 
