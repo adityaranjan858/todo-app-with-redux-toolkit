@@ -1,0 +1,42 @@
+.list_item{
+    background-color: black !important;
+    width: 80%;
+    margin: 8px auto;
+    color: #02beeb !important;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 10px 13px 10px 13px !important;
+}
+
+.del_btn{
+    background-color: red;
+    color: white;
+    padding: 1px 15px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.edit_btn{
+    background-color: #ffac1b;
+    color: black;
+    padding: 1px 15px;
+    border-radius: 6px;
+}
+
+.input_field{
+    background-color: black !important;
+    color: white !important;
+    border-color: black !important;
+}
+
+#inputID::placeholder {
+    color: #93a4cb;
+  }
+
+#inputID:focus{
+    border-color: black;
+    outline: none;
+    box-shadow:none !important;
+}  
+
+
