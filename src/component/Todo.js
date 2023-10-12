@@ -30,7 +30,12 @@ const Todo = () => {
     }, [singleId, todos])
 
     const inputHandler = (e) => {
-        setValue({ ...value, text: e.target.value });
+        let value = e.target.value
+        let word = value.split(" ")
+        let newWord = word.map(word=>{
+            return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        }).join(" ")
+        setValue({ ...value, text: newWord });
     }
 
     const submitHandler = (e) => {

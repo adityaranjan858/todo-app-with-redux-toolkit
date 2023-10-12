@@ -8,7 +8,12 @@ const AddTodos = () => {
     const [value, setValue] = useState("");
     const dispatch = useDispatch()
     const inputHandler = (e) => {
-        setValue(e.target.value)
+        let value = e.target.value
+        let word = value.split(" ")
+        let newWord = word.map(word=>{
+            return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        }).join(" ")
+        setValue(newWord)
     }
     const submitHandler = (e) => {
         e.preventDefault()
