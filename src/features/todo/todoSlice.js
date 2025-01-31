@@ -1,8 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-    todos: [],
-}
 let idVal = 1;
 /* Function to serialize the id value */
 const getNextId = () => {
@@ -10,6 +7,26 @@ const getNextId = () => {
     idVal++;
     return currentId;
 }
+
+const initialState = {
+    todos: [{
+        id : getNextId(),
+        text : "Finish React Tutorials",
+        completed : false
+    },
+    {
+        id : getNextId(),
+        text : "Attend GFG Hackathon",
+        completed : false
+    },  
+    {
+        id : getNextId(),
+        text : "Complete Machine Coding",
+        completed : false
+    },  
+]
+}
+
 const todoSlice = createSlice({
     name: "todo",
     initialState,
@@ -17,9 +34,16 @@ const todoSlice = createSlice({
         addTodo: (state, action) => {
             const todo = {
                 id: getNextId(),
-                text: action.payload
+                text: action.payload,
+                completed : false
             }
             state.todos.push(todo)
+        },
+        toggleTodo : (state, action)=>{
+            const toggleTodos = state.todos.find(todo=>todo.id === action.payload)
+            if(toggleTodos){
+               toggleTodos.completed = !toggleTodos.completed
+            }
         },
         removeTodo: (state, action) => {
             state.todos = state.todos.filter((todo) => todo.id !== action.payload)
@@ -35,5 +59,5 @@ const todoSlice = createSlice({
     }
 })
 
-export const { addTodo, removeTodo, updateTodo } = todoSlice.actions
+export const { addTodo, removeTodo, updateTodo,toggleTodo } = todoSlice.actions
 export default todoSlice.reducer

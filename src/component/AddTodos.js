@@ -26,7 +26,7 @@ const AddTodos = () => {
                 <div className={`input-group m-auto ${style.input_field_container}`} >
                     <input type="text" autoComplete='on' className={`form-control ${style.input_field}`} id={style.inputID} placeholder="Enter a Todo here..." value={value} onChange={inputHandler} />
                     <div>
-                        <button className="btn btn-success ms-2" disabled={value.length === 0} type='submit'>Add a Todo</button>
+                        <button className="btn btn-success ms-2" disabled={value.length === 0} type='submit'>Add a Task</button>
                     </div>
                 </div>
             </form>
