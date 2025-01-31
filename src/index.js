@@ -11,11 +11,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { BrowserRouter } from 'react-router-dom';
 
-
+// basename={process.env.PUBLIC_URL}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL} >
+    <BrowserRouter  >
     <Provider store={store}>
     <App />
     </Provider>
