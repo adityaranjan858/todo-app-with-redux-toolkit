@@ -2,7 +2,6 @@
   "name": "redux_toolkit_todo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://adityaranjan858.github.io/todo-app-with-redux-toolkit",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.6",
     "@testing-library/jest-dom": "^5.17.0",
