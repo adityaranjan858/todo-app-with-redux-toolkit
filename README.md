@@ -3,7 +3,7 @@
 A simple and efficient task management application built with **React** and **Redux Toolkit (RTK)** using **Vite**. This application allows users to create, read, update, and delete tasks while managing their state effectively.
 
 ## Live Demo
-You can see the live ToDo App here: Visit : [Todo App](https://todo-app-with-rtk-v1.vercel.app/) 
+You can see the live ToDo App here: Visit : [Todo App](https://todo-app-with-rtk-v1.netlify.app/) 
 
 ## Features
 
